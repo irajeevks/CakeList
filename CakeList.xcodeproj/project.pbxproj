@@ -14,6 +14,8 @@
 		5D0D1816203C7DD2005F9605 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D0D1814203C7DD2005F9605 /* LaunchScreen.storyboard */; };
 		5D0D1819203C7DD2005F9605 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D1818203C7DD2005F9605 /* main.m */; };
 		5D0D1823203C7DD2005F9605 /* CakeListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D1822203C7DD2005F9605 /* CakeListTests.m */; };
+		5D0D1833203C7F08005F9605 /* CakeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D1831203C7F08005F9605 /* CakeCell.m */; };
+		5D0D1834203C7F08005F9605 /* CakeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D0D1832203C7F08005F9605 /* CakeCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		5D0D181E203C7DD2005F9605 /* CakeListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CakeListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D0D1822203C7DD2005F9605 /* CakeListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CakeListTests.m; sourceTree = "<group>"; };
 		5D0D1824203C7DD2005F9605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D0D1830203C7F08005F9605 /* CakeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CakeCell.h; sourceTree = "<group>"; };
+		5D0D1831203C7F08005F9605 /* CakeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CakeCell.m; sourceTree = "<group>"; };
+		5D0D1832203C7F08005F9605 /* CakeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CakeCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +88,9 @@
 			children = (
 				5D0D1809203C7DD2005F9605 /* AppDelegate.h */,
 				5D0D180A203C7DD2005F9605 /* AppDelegate.m */,
+				5D0D1830203C7F08005F9605 /* CakeCell.h */,
+				5D0D1831203C7F08005F9605 /* CakeCell.m */,
+				5D0D1832203C7F08005F9605 /* CakeCell.xib */,
 				5D0D180C203C7DD2005F9605 /* ViewController.h */,
 				5D0D180D203C7DD2005F9605 /* ViewController.m */,
 				5D0D180F203C7DD2005F9605 /* Main.storyboard */,
@@ -186,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D0D1816203C7DD2005F9605 /* LaunchScreen.storyboard in Resources */,
+				5D0D1834203C7F08005F9605 /* CakeCell.xib in Resources */,
 				5D0D1813203C7DD2005F9605 /* Assets.xcassets in Resources */,
 				5D0D1811203C7DD2005F9605 /* Main.storyboard in Resources */,
 			);
@@ -206,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D0D180E203C7DD2005F9605 /* ViewController.m in Sources */,
+				5D0D1833203C7F08005F9605 /* CakeCell.m in Sources */,
 				5D0D1819203C7DD2005F9605 /* main.m in Sources */,
 				5D0D180B203C7DD2005F9605 /* AppDelegate.m in Sources */,
 			);

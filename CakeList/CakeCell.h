@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface CakeCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *cakeImage;
+@property (weak, nonatomic) IBOutlet UILabel *cakeName;
+@property (weak, nonatomic) IBOutlet UILabel *cakeDesc;
+
+- (void)setData:(NSDictionary *)dict;
 
 @end

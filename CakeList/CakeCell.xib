@@ -1,21 +1,77 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="TimesNewRoman.ttf">
+            <string>TimesNewRomanPSMT</string>
+        </array>
+        <array key="TimesNewRomanBold.ttf">
+            <string>TimesNewRomanPS-BoldMT</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CakeCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="66" id="KGk-i7-Jjw" customClass="CakeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="65.5"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F6f-pi-mC1">
+                        <rect key="frame" x="3" y="4" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="T4U-5Y-BPV"/>
+                            <constraint firstAttribute="height" constant="60" id="iaF-Ji-5o6"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z58-re-ewV">
+                        <rect key="frame" x="71" y="9" width="249" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="8t5-fx-eYS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDB-0i-fwT">
+                        <rect key="frame" x="71" y="33" width="249" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="vht-0T-irO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="15"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Z58-re-ewV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="BGe-Rp-HHo"/>
+                    <constraint firstItem="Z58-re-ewV" firstAttribute="leading" secondItem="F6f-pi-mC1" secondAttribute="trailing" constant="8" id="aEh-g6-Hyu"/>
+                    <constraint firstAttribute="bottom" secondItem="F6f-pi-mC1" secondAttribute="bottom" constant="1.5" id="fz4-h4-3GJ"/>
+                    <constraint firstItem="QDB-0i-fwT" firstAttribute="top" secondItem="Z58-re-ewV" secondAttribute="bottom" constant="3" id="hhl-iq-ST0"/>
+                    <constraint firstAttribute="trailing" secondItem="Z58-re-ewV" secondAttribute="trailing" id="pfz-q8-nBx"/>
+                    <constraint firstAttribute="trailing" secondItem="QDB-0i-fwT" secondAttribute="trailing" id="r48-kw-Ix1"/>
+                    <constraint firstItem="F6f-pi-mC1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="sKK-f9-fL4"/>
+                    <constraint firstItem="QDB-0i-fwT" firstAttribute="leading" secondItem="F6f-pi-mC1" secondAttribute="trailing" constant="8" id="srI-2L-cl9"/>
+                    <constraint firstItem="F6f-pi-mC1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="3" id="vzp-ni-ByX"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="cakeDesc" destination="QDB-0i-fwT" id="0m8-Rk-sUD"/>
+                <outlet property="cakeImage" destination="F6f-pi-mC1" id="3F2-cD-NqO"/>
+                <outlet property="cakeName" destination="Z58-re-ewV" id="o6I-m4-82i"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="65"/>
         </tableViewCell>
     </objects>
 </document>
