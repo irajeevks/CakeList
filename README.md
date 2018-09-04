@@ -4,10 +4,10 @@ iOS Cake List
 An iOS Cake List app developed in Objective c  language. The app can support  iPhone 5(s),SE, iPhone 6,7,8, iPhone 6,7,8 Plus and iPhone X.
 
 # Notices
-The current version is working with Xcode Version 9.0.1 (9A1004). If you have any issue the please text me on rajeevksingh@live.com
+The current version is working with Xcode Version 9.0.1 (9A1004). 
 
 # iOS Version Support
-I have tested this application on iOS 9, 10 and 11. if you have any issues then please text me on rajeevksingh@live.com
+I have tested this application on iOS 9, 10 and 11. 
 
 # Screenshots
 I have attached the few Screenshots for you to review and let me know if you have any question and concern(s).
